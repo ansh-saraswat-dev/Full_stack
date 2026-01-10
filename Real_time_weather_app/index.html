@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Async Weather Dashboard</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.app {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#cityInput {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#searchBtn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+}
+
+#searchBtn:hover {
+    background: #4338ca;
+}
+
+.outer-box {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 14px;
+    background: linear-gradient(200deg, #6366f1, #22d3ee);
+}
+
+.card {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #f8fafc;
+    box-shadow: inset 0 0 0 1px #e5e7eb;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card strong {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="app">
+        <h2>Weather Dashboard</h2>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="outer-box">
+            <div id="result" class="card"></div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
