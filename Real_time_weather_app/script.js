@@ -1,6 +1,6 @@
 class WeatherService {
     constructor() {
-        this.API_KEY = "ea7958077e00c7cd7ee546272b59caf2";
+        this.API_KEY = "MY_API";
         this.BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
     }
 
@@ -49,4 +49,5 @@ searchBtn.addEventListener("click", async () => {
         resultDiv.textContent = error.message;
         resultDiv.className = "error";
     }
+
 });
