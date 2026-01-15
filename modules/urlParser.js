@@ -1,0 +1,1 @@
+export const parseURL =u=>{ const x= new URL(u); return {host:x.host, path:x.pathname}; };

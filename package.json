@@ -1,0 +1,13 @@
+{
+  "name": "utility-tool",
+  "version": "1.0.0",
+  "description": "Command-line System Utility & File Management Tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Ansh Saraswat",
+  "license": "ISC",
+  "type": "module"
+}

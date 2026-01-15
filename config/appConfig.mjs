@@ -1,0 +1,1 @@
+export const LOG_FILE= "./logs/app.log";
