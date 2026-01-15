@@ -1,7 +1,7 @@
 import readline from "readline";
-import { createFile, readFile, appendFile, deleteFile, listFiles } from "./modules/fileManager.js";
-import { getSystemInfo } from "./modules/systemInfo.mjs";
-import { parseURL } from "./modules/urlParser.js";
+import { createFile, readFile, appendFile, deleteFile, listFiles } from "../modules/fileManager.js";
+import { getSystemInfo } from "../modules/systemInfo.mjs";
+import { parseURL } from "../modules/urlParser.js";
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
